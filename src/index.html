@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.min.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>Zenex</title>
+    <script src="https://kit.fontawesome.com/99033a2d42.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark" id="body">
+    <button class="fixed top-5 right-5 z-50 text-2xl"  onclick="toggleDarkMode(event)">
+        <i class="fa-solid fa-toggle-on dark:text-white text-black transition-all"></i>
+    </button>
+    <div class="main flex flex-row dark:text-white text-black">
+        <button class="fixed top-5 left-5 z-50 md:hidden" onclick="toggleMenu(event)">
+            <i class="fa-solid fa-circle-chevron-down fa-2x -rotate-90 transition-all"></i>
+        </button>
+        <div class="leftpart flex" id="menu">
+            <div class="flex flex-col gap-24 ">
+                <h3 class="text-3xl font-bold tracking-widest">ZENEX</h3>
+                <ul class="flex flex-col gap-2 font-semibold text-gray-400">
+                    <li class="text-black dark:text-white k-hover cursor-pointer"><i class="fa-solid fa-house"></i>
+                        &nbsp; Home</li>
+                    <li class="k-hover cursor-pointer"><i class="fa-solid fa-feather"></i> &nbsp; Blog</li>
+                    <li class="k-hover cursor-pointer"><i class="fa-solid fa-circle-info"></i> &nbsp; About</li>
+                    <li class="k-hover cursor-pointer"><i class="fa-solid fa-envelope"></i> &nbsp; Subscribe</li>
+                    <li class="k-hover cursor-pointer"><i class="fa-solid fa-address-card"></i> &nbsp; Contact Me</li>
+                </ul>
+                <div class="text-sm">
+                    <h5>©2023 Zenex Tech</h5>
+                    <h5>Created By Javed Hussain</h5>
+                </div>
+            </div>
+
+        </div>
+        <div class="rightpart w-full min-h-screen dark:bg-slate-900 bg-slate-100">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="profile-img flex-grow"></div>
+                <div class="flex-grow">
+                    <h2 class="text-center lg:text-left text-2xl lg:text-4xl font-bold uppercase">Javed Hussain</h2>
+                    <p class="mt-4 text-center lg:text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Quasi debitis eligendi a quisquam dolor quos ipsum adipisci ut perspiciatis, rerum, ex
+                        aliquam
+                        ducimus! Eaque, deleniti. Provident aut veritatis ratione inventore.</p>
+                    <div class="flex flex-row gap-8 mt-10 fa-2x md:justify-start justify-center">
+                        <div class="cursor-pointer k-hover"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="cursor-pointer k-hover"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="cursor-pointer k-hover"><i class="fa-brands fa-square-twitter"></i></div>
+                        <div class="cursor-pointer k-hover"><i class="fa-solid fa-file-pdf"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
